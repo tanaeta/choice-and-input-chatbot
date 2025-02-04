@@ -1,20 +1,10 @@
 import React from "react";
-import Chatbot from "react-chatbot-kit";
-import "react-chatbot-kit/build/main.css";
-import "./App.css";
+import ChatUI from "./component/ChatUI";
 
-import config from "./component/ChatbotConfig";
-import ActionProvider from "./component/ActionProvider";
-import MessageParser from "./component/MessageParser";
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Chatbot
-        config={config}
-        actionProvider={ActionProvider}
-        messageParser={MessageParser}
-        placeholderText='質問を入力してください'
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <ChatUI
       />
     </div>
   );
